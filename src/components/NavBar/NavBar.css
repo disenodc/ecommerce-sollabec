@@ -1,0 +1,54 @@
+.NavBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.App-menu {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+  .menu-link {
+    color: orangered;
+    text-decoration: none;
+    height: 35px;
+    padding: 5px;  
+    background-color: #fff;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .menu-link:hover {
+    font-size: 1.25rem;
+    background-color: orangered;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 599px) {
+    .NavBar {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    .App-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .menu-link {
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+    .menu-link:hover {
+      width: 100%;
+      font-size: 1.25rem;
+      background-color: orangered;
+      color: #fff;
+    }
+  }  
